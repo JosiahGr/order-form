@@ -1,8 +1,10 @@
-/* body {
+body {
   background-color: #3FEEE6;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+form {
+  padding-top: 100px;
+}
 header {
     background-color:#FC4445;
     width:100%;
@@ -58,4 +60,4 @@ footer {
 }
 
 
- */
+
