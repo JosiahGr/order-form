@@ -1,4 +1,6 @@
 'strict';
+var salesForm = document.getElementById('checkout-form');
+
 
 Product.allProducts = [];
 var productNames = [];
@@ -32,3 +34,6 @@ new Product('../img/unicorn.jpg', 'Unicorn');
 new Product('../img/usb.gif', 'USB');
 new Product('../img/water-can.jpg', 'Water Can');
 new Product('../img/wine-glass.jpg', 'Wine Glass');
+
+
+salesForm.addEventListener('submit');
