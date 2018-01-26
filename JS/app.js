@@ -1,7 +1,6 @@
 'strict';
 var salesForm = document.getElementById('checkout-form');
 
-
 Product.allProducts = [];
 var productNames = [];
 
@@ -35,5 +34,20 @@ new Product('../img/usb.gif', 'USB');
 new Product('../img/water-can.jpg', 'Water Can');
 new Product('../img/wine-glass.jpg', 'Wine Glass');
 
+function showProducts(){
+  document.getElementById(" myProducts").classList.toggle('show');
+}
 
-salesForm.addEventListener('submit');
+window.onclick = function(event){
+  if (!event.target.matches('.dropbtn')){
+
+    var dropdowns = document.getElementsByClassName('drop-downcontent');
+    var i;
+    for (i = 0; i < dropdowns.length; i++){
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')){
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
