@@ -1,11 +1,11 @@
 function showProducts(){
-  document.getElementById(" myProducts").classList.toggle('show');
+  document.getElementById("myProducts").classList.toggle('show');
 }
 
 window.onclick = function(event){
   if (!event.target.matches('.dropbtn')){
 
-    var dropdowns = document.getElementsByClassName('drop-downcontent');
+    var dropdowns = document.getElementsByClassName('dropdown-content');
     var i;
     for (i = 0; i < dropdowns.length; i++){
       var openDropdown = dropdowns[i];
